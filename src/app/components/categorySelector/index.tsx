@@ -6,7 +6,7 @@ export default function CategorySelector(){
     return(
         <>
         <div className={styles.cardContainer}>
-            <div className={styles.card}>
+            <div className= {styles.card}>
                 <Image src={'/../public/img/movieClapper.png'} alt={'Movies'} width='100' height='100'></Image>
                 <p>Movies</p>
             </div>
