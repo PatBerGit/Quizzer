@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './style.module.scss';
 import Link from 'next/link';
 
+
 export default function CategorySelector(){
     return(
         <>
@@ -23,7 +24,9 @@ export default function CategorySelector(){
                 <p>Countries</p>
             </div>
         </div>
-        <button className={styles.startButton}>Start quiz</button>
+        <Link href={'/pages/questions'}>
+            <button className={styles.startButton}>Start quiz</button>
+        </Link>
         </>
     );
 }
