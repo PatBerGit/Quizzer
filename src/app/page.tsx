@@ -1,8 +1,5 @@
 import styles from './page.module.scss'
-import Header from './components/header'
 import CategorySelector from './components/categorySelector'
-import Menu from './components/menu'
-
 export default function Home() {
   return (
     <main className={styles.main}>

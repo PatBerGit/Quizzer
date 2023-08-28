@@ -1,0 +1,35 @@
+@import '/src/styles/styleVariables.scss';
+.container {
+    min-height: 100vh;
+    width: 100vw;
+  }
+.questionsHeader{
+    font-size: 5em;
+    font-family: $font-header;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.questionNumber{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: $font-header;
+}
+
+.question{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: $font-header;
+}
+
+.answerList{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer{
+  font-size: 1.1em;
+  margin: 5px;
+}

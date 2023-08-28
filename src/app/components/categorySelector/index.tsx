@@ -24,7 +24,7 @@ export default function CategorySelector(){
                 <p>Countries</p>
             </div>
         </div>
-        <Link href={'/pages/questions'}>
+        <Link className={styles.link} href={'/questions'}>
             <button className={styles.startButton}>Start quiz</button>
         </Link>
         </>
