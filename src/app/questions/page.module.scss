@@ -33,3 +33,18 @@
   font-size: 1.1em;
   margin: 5px;
 }
+
+.nextButton{
+  display: block;
+  width: 150px;
+  padding: 15px;
+  background-color: $col-button;
+  color: white;
+  font-family: $font-header;
+  font-size: 1.3em;
+  margin: 20px auto;
+}
+
+.link{
+  text-decoration: none;
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './page.module.scss'
 
 export default function questions() {
@@ -23,6 +24,9 @@ export default function questions() {
           <input type="radio" id="4" name="answer" value="They don't have any"/>
         </label>
       </ul>
+      <Link className={styles.link} href={'/questions'}>
+            <button className={styles.nextButton}>Next question</button>
+        </Link>
     </div>
   )
 }

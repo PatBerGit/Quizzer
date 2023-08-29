@@ -8,8 +8,8 @@ return(
     <>
     <menu className={styles.menuList}>
         <ul className={styles.menuList}>
-            <li className={styles.menuItem}>How to play</li>
-            <li className={styles.menuItem}>Highscores</li>
+            <Link href={'/'} className={styles.link}><li className={styles.menuItem}>How to play</li></Link>
+            <Link href={'/'} className={styles.link}><li className={styles.menuItem}>Highscores</li></Link>
         </ul>
     </menu>
     </>
