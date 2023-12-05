@@ -1,7 +1,17 @@
 import Link from 'next/link'
 import styles from './page.module.scss'
 
-export default function questions() {
+const getQuestions = async () => {
+  const res = await fetch('https://api.jsonbin.io/v3/b/6515669d54105e766fbaecde');
+
+  if (!res.ok) {
+      throw new Error("Could not retrieve questions");
+  }
+  console.log(res.json())
+  return res.json();
+}
+
+const Questions = async () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.questionsHeader}>Questions</h2>
@@ -30,3 +40,4 @@ export default function questions() {
     </div>
   )
 }
+export default Questions;
