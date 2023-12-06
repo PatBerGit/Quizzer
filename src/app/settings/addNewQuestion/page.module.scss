@@ -8,6 +8,61 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.form{
-    display: grid;
-}
+.form {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleLabel titleInput titleInput titleInput"
+      "questionLabel questionInput questionInput questionInput"
+      "categoryLabel categorySelector categorySelector categorySelector"
+      "info info info info"
+      "answer1Label answer1Input answer1Input answer1Correct"
+      "answer2Label answer2Input answer2Input answer2Correct"
+      "answer3Label Answer3Input Answer3Input answer3Correct"
+      "Answer4Label Answer4Input Answer4Input answer4Correct"
+      "saveButton saveButton saveButton saveButton";
+      
+  }
+  
+  .titleLabel { grid-area: titleLabel; }
+  
+  .titleInput { grid-area: titleInput; }
+  
+  .questionLabel { grid-area: questionLabel; }
+  
+  .questionInput { grid-area: questionInput; }
+  
+  .categoryLabel { grid-area: categoryLabel; }
+  
+  .categorySelector { grid-area: categorySelector; }
+  
+  .answer1Label { grid-area: answer1Label; }
+  
+  .answer1Input { grid-area: answer1Input; }
+  
+  .answer1Correct { grid-area: answer1Correct; }
+  
+  .answer2Label { grid-area: answer2Label; }
+  
+  .answer2Input { grid-area: answer2Input; }
+  
+  .answer2Correct { grid-area: answer2Correct; }
+  
+  .answer3Label { grid-area: answer3Label; }
+  
+  .Answer3Input { grid-area: Answer3Input; }
+  
+  .answer3Correct { grid-area: answer3Correct; }
+  
+  .Answer4Label { grid-area: Answer4Label; }
+  
+  .Answer4Input { grid-area: Answer4Input; }
+  
+  .answer4Correct { grid-area: answer4Correct; }
+  
+  .saveButton { grid-area: saveButton; }
+  
+  .info { grid-area: info; }
+  
