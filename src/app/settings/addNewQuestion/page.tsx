@@ -12,9 +12,9 @@ export default function AddNew() {
             <form className={styles.form} action="submit">
                 <label className={styles.titleLabel} htmlFor="title">Title: </label>
                 <input className={styles.titleInput} type="text" id="title" name="title" />
-                <label className={styles.questionlabel} htmlFor="question">Question: </label>
+                <label className={styles.questionLabel} htmlFor="question">Question: </label>
                 <input className={styles.questionInput} type="text" id="question" name="question" />
-                <label className={styles.categorylabel} htmlFor="category">Select category
+                <label className={styles.categoryLabel} htmlFor="category">Select category
                     <select className={styles.categorySelector} id="category" name="category">
                         <option value="movies">Movies</option>
                         <option value="sport">Sport</option>
@@ -39,8 +39,10 @@ export default function AddNew() {
                     <input className={styles.answer4Input} type="text" id="answer4" name="answer4" />
                     <input className={styles.answer4Correct} type="radio" name="correctAnswer" value="answer4"/>
                 </label>
-
-                <button className={styles.saveButton}>Save</button>
+                <div className={styles.saveButtonContainer}>
+                    <button className={styles.saveButton}>Save</button>
+                </div>
+                
             </form>
         </div>
     </>

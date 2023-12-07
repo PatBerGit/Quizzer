@@ -1,14 +1,20 @@
 .pageTitle{
     text-align: center;
 }
-
+c:\Users\pbergsan\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html
 .addNewQuestionContainer{
+    display: flex;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 90%;
+    margin: auto;
 }
 
-.form {  display: grid;
+.form {  
+    margin: 10px;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -20,49 +26,138 @@
       "info info info info"
       "answer1Label answer1Input answer1Input answer1Correct"
       "answer2Label answer2Input answer2Input answer2Correct"
-      "answer3Label Answer3Input Answer3Input answer3Correct"
-      "Answer4Label Answer4Input Answer4Input answer4Correct"
-      "saveButton saveButton saveButton saveButton";
+      "answer3Label answer3Input answer3Input answer3Correct"
+      "answer4Label answer4Input answer4Input answer4Correct"
+      "saveButtonContainer saveButtonContainer saveButtonContainer saveButtonContainer";
       
   }
   
-  .titleLabel { grid-area: titleLabel; }
+  .titleLabel { 
+    grid-area: titleLabel;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+ }
   
-  .titleInput { grid-area: titleInput; }
+  .titleInput { 
+    grid-area: titleInput; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
-  .questionLabel { grid-area: questionLabel; }
+  .questionLabel { 
+    grid-area: questionLabel; 
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+}
   
-  .questionInput { grid-area: questionInput; }
+  .questionInput { 
+    grid-area: questionInput; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
-  .categoryLabel { grid-area: categoryLabel; }
+  .categoryLabel { 
+    grid-area: categoryLabel; 
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+}
   
-  .categorySelector { grid-area: categorySelector; }
-  
-  .answer1Label { grid-area: answer1Label; }
-  
-  .answer1Input { grid-area: answer1Input; }
+  .categorySelector { 
+    grid-area: categorySelector; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
+
+  .answer1Label { 
+    grid-area: answer1Label; 
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+}
+
+  .answer1Input { 
+    grid-area: answer1Input;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
   .answer1Correct { grid-area: answer1Correct; }
   
-  .answer2Label { grid-area: answer2Label; }
+  .answer2Label { 
+    grid-area: answer2Label;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+
+}
   
-  .answer2Input { grid-area: answer2Input; }
+  .answer2Input { 
+    grid-area: answer2Input;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
   .answer2Correct { grid-area: answer2Correct; }
   
-  .answer3Label { grid-area: answer3Label; }
+  .answer3Label {
+    grid-area: answer3Label;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+}
   
-  .Answer3Input { grid-area: Answer3Input; }
+  .answer3Input { 
+    grid-area: answer3Input;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
   .answer3Correct { grid-area: answer3Correct; }
   
-  .Answer4Label { grid-area: Answer4Label; }
+  .answer4Label { 
+    grid-area: answer4Label; 
+    font-size: 1.2em;
+    text-align: right;
+    margin: 15px 10px;
+}
   
-  .Answer4Input { grid-area: Answer4Input; }
+  .answer4Input { 
+    grid-area: answer4Input; 
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
   
-  .answer4Correct { grid-area: answer4Correct; }
+  .answer4Correct { 
+    grid-area: answer4Correct; }
   
-  .saveButton { grid-area: saveButton; }
+  .saveButtonContainer { 
+    grid-area: saveButton;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 70%;
+}
   
-  .info { grid-area: info; }
+  .info { 
+    grid-area: info; 
+    font-size: 1.2em;
+    text-align: center;
+    margin: 15px 10px;
+}
+
+.saveButton{
+    width: 200px;
+    height: 70%;
+    border-radius: 5px;
+}
   
